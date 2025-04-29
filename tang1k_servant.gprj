@@ -39,5 +39,8 @@
         <File path="src/toplevel.v" type="file.verilog" enable="1"/>
         <File path="src/tang1k_servant.cst" type="file.cst" enable="1"/>
         <File path="src/tang1k_servant.sdc" type="file.sdc" enable="1"/>
+        <File path="serv/sw/blinky.hex" type="file.other" enable="1"/>
+        <File path="serv/sw/hello_uart.hex" type="file.other" enable="1"/>
+        <File path="serv/sw/zephyr_hello.hex" type="file.other" enable="1"/>
     </FileList>
 </Project>

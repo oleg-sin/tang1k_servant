@@ -1,17 +1,19 @@
 module toplevel(
-    input io_clk,
-    input io_resetn,
-    output io_gpio,
-    output led_r,
-    output led_g,
-    output led_b
+    input wire io_clk,
+    input wire io_resetn,
+    output wire io_gpio,
+    output wire led_r,
+    output wire led_g,
+    output wire led_b
 );
-    parameter memfile = "zephyr_hello.hex";
+    parameter memfile = "blinky.hex";
     parameter memsize = 8192;
 
     wire      wb_clk;
     reg       wb_rst;
     wire      lock;
+
+    assign led_r = !io_gpio;
 
     Gowin_rPLL pll(
         .clkout(wb_clk), //output clkout
