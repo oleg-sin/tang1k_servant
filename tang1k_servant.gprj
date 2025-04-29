@@ -5,6 +5,39 @@
     <Version>5</Version>
     <Device name="GW1NZ-1" pn="GW1NZ-LV1QN48C6/I5">gw1nz1-015</Device>
     <FileList>
+        <File path="serv/rtl/serv_aligner.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_alu.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_bufreg.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_bufreg2.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_compdec.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_csr.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_debug.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_decode.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_immdec.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_mem_if.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_rf_if.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_rf_ram.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_rf_ram_if.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_rf_top.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_state.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_synth_wrapper.v" type="file.verilog" enable="1"/>
+        <File path="serv/rtl/serv_top.v" type="file.verilog" enable="1"/>
+        <File path="serv/servant/servant.v" type="file.verilog" enable="1"/>
+        <File path="serv/servant/servant_gpio.v" type="file.verilog" enable="1"/>
+        <File path="serv/servant/servant_mux.v" type="file.verilog" enable="1"/>
+        <File path="serv/servant/servant_ram.v" type="file.verilog" enable="1"/>
+        <File path="serv/servant/servant_timer.v" type="file.verilog" enable="1"/>
+        <File path="serv/servile/servile.v" type="file.verilog" enable="1"/>
+        <File path="serv/servile/servile_arbiter.v" type="file.verilog" enable="1"/>
+        <File path="serv/servile/servile_mux.v" type="file.verilog" enable="1"/>
+        <File path="serv/servile/servile_rf_mem_if.v" type="file.verilog" enable="1"/>
+        <File path="serv/serving/serving.v" type="file.verilog" enable="1"/>
+        <File path="serv/serving/serving_ram.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_bandgap/gowin_bandgap.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
         <File path="src/toplevel.v" type="file.verilog" enable="1"/>
+        <File path="src/tang1k_servant.cst" type="file.cst" enable="1"/>
+        <File path="src/tang1k_servant.sdc" type="file.sdc" enable="1"/>
     </FileList>
 </Project>

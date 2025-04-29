@@ -1,0 +1,10 @@
+[General]
+ipc_version=4
+file=gowin_bandgap
+module=Gowin_BANDGAP
+target_device=gw1nz1-015
+type=module_bandgap
+version=1.0
+
+[Config]
+Language=0
