@@ -1,24 +1,12 @@
-#ifndef GPIO_BASE
-#define GPIO_BASE 0x40000000
-#endif
+.equ GPIO_BASE,   0x40000000
 
-// New delay constants - like different pipe diameters!
-#ifndef DELAY_500MS
-#define DELAY_500MS 0x80000  // Big pipe for long wait
-#endif
-#ifndef DELAY_100MS
-#define DELAY_100MS 0x20000  // Medium clog
-#endif
-#ifndef DELAY_50MS
-#define DELAY_50MS 0x10000   // Small piss stream
-#endif
+.equ DELAY_500MS, 0x80000
+.equ DELAY_100MS, 0x20000
+.equ DELAY_50MS,  0x10000
 
 .globl _start
 _start:
-// Plumbing address same way - two commands better than one, da?
-lui a0, %hi(GPIO_BASE)
-addi a0, a0, %lo(GPIO_BASE)
-
+li a0, GPIO_BASE
 li t3, 0 // State counter - now 0-6 like days without vodka
 
 main_loop:
