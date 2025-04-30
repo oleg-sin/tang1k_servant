@@ -1,4 +1,4 @@
-TOOLCHAIN_PREFIX?=/opt/riscv-all/bin/riscv64-unknown-elf-
+TOOLCHAIN_PREFIX?=riscv64-unknown-elf-
 
 # New default target - like main water valve!
 all: $(patsubst %.S,%.hex,$(wildcard *.S))  

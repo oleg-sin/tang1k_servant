@@ -4,7 +4,7 @@
 //Tool Version: V1.9.11
 //Part Number: GW1NZ-LV1QN48C6/I5
 //Device: GW1NZ-1
-//Created Time: Tue Apr 29 22:21:16 2025
+//Created Time: Wed Apr 30 23:29:12 2025
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------

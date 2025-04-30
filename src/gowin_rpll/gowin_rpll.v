@@ -4,7 +4,7 @@
 //Tool Version: V1.9.11
 //Part Number: GW1NZ-LV1QN48C6/I5
 //Device: GW1NZ-1
-//Created Time: Tue Apr 29 22:21:16 2025
+//Created Time: Wed Apr 30 23:29:12 2025
 
 module Gowin_rPLL (clkout, lock, reset, clkin);
 
@@ -40,11 +40,11 @@ rPLL rpll_inst (
 
 defparam rpll_inst.FCLKIN = "27";
 defparam rpll_inst.DYN_IDIV_SEL = "false";
-defparam rpll_inst.IDIV_SEL = 8;
+defparam rpll_inst.IDIV_SEL = 4;
 defparam rpll_inst.DYN_FBDIV_SEL = "false";
-defparam rpll_inst.FBDIV_SEL = 15;
+defparam rpll_inst.FBDIV_SEL = 2;
 defparam rpll_inst.DYN_ODIV_SEL = "false";
-defparam rpll_inst.ODIV_SEL = 16;
+defparam rpll_inst.ODIV_SEL = 48;
 defparam rpll_inst.PSDA_SEL = "0000";
 defparam rpll_inst.DYN_DA_EN = "true";
 defparam rpll_inst.DUTYDA_SEL = "1000";
