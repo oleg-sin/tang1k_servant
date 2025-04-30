@@ -6,7 +6,7 @@ module toplevel(
     output wire led_g,
     output wire led_b
 );
-    parameter memfile = "blinky_pipe.hex";
+    parameter memfile = "blinky_c.hex";
     parameter memsize = 8192;
 
     wire      wb_clk;

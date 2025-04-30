@@ -6,6 +6,8 @@ all: $(patsubst %.S,%.hex,$(wildcard *.S))
 
 %.elf: %.S link.ld
 	$(TOOLCHAIN_PREFIX)gcc -nostartfiles -nostdlib -march=rv32i_zicsr -mabi=ilp32 -Tlink.ld -o$@ $<
+	$(TOOLCHAIN_PREFIX)size $@
+	$(TOOLCHAIN_PREFIX)strip $@
 %.bin: %.elf
 	$(TOOLCHAIN_PREFIX)objcopy -O binary $< $@
 %.hex: %.bin
