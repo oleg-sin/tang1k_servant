@@ -6,14 +6,14 @@ module toplevel(
     output wire led_g,
     output wire led_b
 );
-    parameter memfile = "blinky.hex";
+    parameter memfile = "blinky_pipe.hex";
     parameter memsize = 8192;
 
     wire      wb_clk;
     reg       wb_rst;
     wire      lock;
 
-    assign led_r = !io_gpio;
+    assign led_r = !io_gpio;    
 
     Gowin_rPLL pll(
         .clkout(wb_clk), //output clkout
