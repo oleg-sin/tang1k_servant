@@ -36,6 +36,7 @@
         <File path="serv/serving/serving_ram.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_bandgap/gowin_bandgap.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm.v" type="file.verilog" enable="1"/>
         <File path="src/toplevel.v" type="file.verilog" enable="1"/>
         <File path="src/tang1k_servant.cst" type="file.cst" enable="1"/>
         <File path="src/tang1k_servant.sdc" type="file.sdc" enable="1"/>
