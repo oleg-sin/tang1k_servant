@@ -1,5 +1,5 @@
 .equ LED_ADDR, 0x40000000
-.equ DELAY,    0x10000
+.equ DELAY,    0x2000
 
 .globl _start
 

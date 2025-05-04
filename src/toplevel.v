@@ -19,12 +19,12 @@ module toplevel(
 //    assign io_led_r = !io_gpio;
 
 always @(*) begin
-    if (!io_gpio) begin
-        io_led_r = 0;    // Красный включен
+    if (io_gpio) begin
+        io_led_r = 1;    // Красный включен
         io_led_g = 1;    // Зеленый выключен
         io_led_b = 1;    // Синий выключен
     end else begin
-        io_led_r = 1;    // Красный выключен
+        io_led_r = !pwm_red;    // Красный выключен
         io_led_g = !pwm_green; // Зеленый управляется PWM (без инверсии)
         io_led_b = !pwm_blue;  // Синий управляется PWM (без инверсии)
     end
@@ -51,9 +51,9 @@ end
         .q        (io_gpio)
     );
 
-    wire [7:0] duty_r = 8'h00;
-    wire [7:0] duty_g = 8'hCC;
-    wire [7:0] duty_b = 8'hFF;
+    wire [7:0] duty_r = 8'hFF;
+    wire [7:0] duty_g = 8'h00;
+    wire [7:0] duty_b = 8'h96;
 
     wire pwm_red;
     wire pwm_green;
@@ -62,15 +62,15 @@ end
 //    assign io_led_r = !pwm_red;
 
 
-//    pwm #(
-//        .CLK_FREQ(SYS_CLK_FREQ),
-//        .PWM_FREQ(PWM_FREQ)
-//    ) pwm_r (  
-//        .clk(io_clk),  
-//        .reset(!io_resetn),  
-//        .duty(duty_r), 
-//        .pwm_out(pwm_red)  
-//    );  
+    pwm #(
+        .CLK_FREQ(SYS_CLK_FREQ),
+        .PWM_FREQ(PWM_FREQ)
+    ) pwm_r (  
+        .clk(io_clk),  
+        .reset(!io_resetn),  
+        .duty(duty_r), 
+        .pwm_out(pwm_red)  
+    );  
 
     pwm #(
         .CLK_FREQ(SYS_CLK_FREQ),
