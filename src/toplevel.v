@@ -51,9 +51,9 @@ end
         .q        (io_gpio)
     );
 
-    wire [7:0] duty_r = 8'hFF;
+    wire [7:0] duty_r = 8'h14;
     wire [7:0] duty_g = 8'h00;
-    wire [7:0] duty_b = 8'h96;
+    wire [7:0] duty_b = 8'h64;
 
     wire pwm_red;
     wire pwm_green;
